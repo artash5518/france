@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/OBJLoader.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/TextureLoader.js"></script>-->
+<!--    <script src="js/TextureLoader.js"></script>-->
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/OBJLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/MTLLoader.js"></script>
+
+<script>
+    // Создание сцены, камеры и рендерера
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Добавление света в сцену
+    const ambientLight = new THREE.AmbientLight(0x404040); // мягкий свет
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // направленный свет
+    directionalLight.position.set(5, 5, 5).normalize(); // позиция источника света
+    scene.add(directionalLight);
+
+    // Камера
+    camera.position.set(0, 0, 500);  // Камера на расстоянии 5 единиц от центра
+    camera.lookAt(0, 0, 0);  // Камера направлена на центр сцены
+
+    // Загружаем модель и материалы
+    const mtlLoader = new THREE.MTLLoader();
+    mtlLoader.load('img/models/arjoc.mtl', (materials) => {
+        materials.preload();  // Применяем материалы
+        const objLoader = new THREE.OBJLoader();
+        objLoader.setMaterials(materials);  // Устанавливаем материалы для OBJ модели
+        objLoader.load(
+            'img/models/arjoc.obj',  // Замените на правильный путь к файлу .obj
+            (object) => {
+                console.log('Model loaded successfully');
+                object.traverse((child) => {
+                    if (child.isMesh) {
+                        // Применяем стандартный материал (если текстура не работает)
+                        child.material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });  // Зеленый цвет
+                    }
+                });
+                scene.add(object); // Добавляем модель в сцену
+                animate(); // Запуск анимации
+            },
+            undefined,  // Прогресс загрузки можно обработать здесь
+            (error) => {
+                console.error('An error occurred while loading the model:', error);
+            }
+        );
+    });
+
+    // Анимация и рендеринг
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);  // Рендеринг сцены
+    }
+
+    // Обработчик изменения размера окна
+    window.addEventListener('resize', () => {
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+// const scene = new THREE.Scene();
+    // const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    // const renderer = new THREE.WebGLRenderer();
+    //
+    // renderer.setSize(window.innerWidth, window.innerHeight);
+    // document.body.appendChild(renderer.domElement);
+    //
+    // // Добавьте свет
+    // const light = new THREE.PointLight(0xffffff);
+    // light.position.set(10, 10, 10);
+    // scene.add(light);
+    //
+    // // Загрузите модель
+    // const loader = new THREE.OBJLoader();
+    // loader.load(
+    //     'img/models/model.obj',
+    //     (object) => {
+    //         scene.add(object);
+    //         object.position.set(0, 0, 0);
+    //     },
+    //     (xhr) => console.log((xhr.loaded / xhr.total) * 100 + '% loaded'),
+    //     (error) => console.error('An error occurred:', error)
+    // );
+    //
+    // camera.position.z = 5;
+    //
+    // function animate() {
+    //     requestAnimationFrame(animate);
+    //     renderer.render(scene, camera);
+    // }
+    //
+    // animate();
+
+</script>
