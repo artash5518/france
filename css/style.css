@@ -395,7 +395,8 @@
     height: 700px;
     margin-top: 95px;
     display: block;
-    object-fit: cover;
+//     object-fit: cover;
+    object-fit: contain;
     transition: 0.5s;
 
 }
