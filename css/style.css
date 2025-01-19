@@ -197,7 +197,28 @@
     }
 }
 /*** Topbar End ***/
+.search-input{
+    padding: 7px;
+    border-radius: 50px;
+   width:250px;
+    background-color: rgb(255 255 255) !important;
+}
+#search-icon{
+position: absolute;
+    right: 14px;
+    top: 9px;
+    cursor:pointer;
+}
 
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
