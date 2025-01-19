@@ -187,6 +187,14 @@
     .topbar {
         display: none;
     }
+    .hid-in-mobile{
+    display:none;
+    }
+}
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+//         max-width: 1100px!important;
+    }
 }
 /*** Topbar End ***/
 
