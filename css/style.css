@@ -209,7 +209,9 @@ position: absolute;
     top: 9px;
     cursor:pointer;
 }
-
+.section-title p{
+color:#ffffff;
+}
 .close-btn {
     position: absolute;
     top: 5px;
