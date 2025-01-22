@@ -139,7 +139,7 @@
                                         L’histoire de Paris remonte autour de l’an 259 avant J-C, lorsque la petite tribu des Parisii fonda la ville sur la rive droite de la Seine. Ce premier peuple de pêcheurs tomba entre les mains des Romains qui fondèrent la ville de Lutèce en l’an 52 avant J-C.                                    </p>
                                 </div>
                                 <div class="text-start mb-4">
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+                                    <a href="javascript:void(0)" id="load-more-text-btn" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
                                 </div>
                             </div>
                         </div>
@@ -176,47 +176,60 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
+                        <!-- Modal Video -->
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content rounded-0">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Description de la France</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="max-height: 600px;overflow: auto;">
+                                        <p style="color: #000;padding: 10px;height: 500px;overflow: auto;">
+                                            Premières étapes
+                                            L’histoire de Paris remonte autour de l’an 259 avant J-C, lorsque la petite tribu des Parisii fonda la ville sur la rive droite de la Seine. Ce premier peuple de pêcheurs tomba entre les mains des Romains qui fondèrent la ville de Lutèce en l’an 52 avant J-C.
+                                            La ville ne prendra le nom de Paris qu’au IVème siècle. Durant cette époque, la légende raconte que la ville résista à l’invasion d’Attila grâce à l’intervention de Sainte Geneviève (la sainte patronne de la ville).
+                                            Clovis, roi des Francs, décida de faire de Paris la capitale du pays en l’an 508.  Et c’est en l’an 987 que s’installa la dynastie capétienne jusqu’en 1328.
+                                            Paris gagna en importance tout au long du XIème siècle, grâce au commerce d’argent et à sa situation géographique qui croisait la route de nombreux pèlerins et commerçants.
+                                            Révoltes et rébellions
+                                            Au début du XIIème siècle, étudiants et maîtres se confrontèrent à l’autorité épiscopale et formèrent la corporation « universitas ». Louis IX octroya à Robert de Sorbon la fondation de « La Sorbonne ». Dès lors, Paris est devenue une ville universitaire.
+                                            Paris vécut trois révoltes au cours du XIVème siècle : la Rébellion des Commerçants de 1358 (menée par Etienne Marcel), la Révolte des Maillotins de 1382 (soulèvement des citoyens contre l’oppression fiscale) et la Révolte des Cabochiens de 1413 (également menée par les commerçants). Cette série de soulèvements est répertoriée dans la Guerre de Cent Ans.
+                                            Outre les conflits qui provoquèrent des milliers de morts, la capitale française était en 1328, la ville la plus peuplée d’Europe, jusqu’à ce que sa population se vit décimée par la Peste Noire. À la suite de la Guerre de Cent Ans, Paris fut dévastée et Jeanne d’Arc ne parvint pas à libérer la ville des Anglais et de ses alliés (les Bourguignons).
+                                            Malgré la présence de la Cour dans la Vallée de la Loire, la ville continua à s’étendre de manière décousue. Ce ne fut qu’en 1528, lorsque le roi François Ier établit sa résidence officielle à Paris, que la ville devint la plus grande d’Occident.
+                                            Le 24 août 1572 fut la date d’un événement tragique, plus connu sous le nom du Massacre de la Saint-Barthélemy – le massacre en masse des protestants (huguenots) organisé par les rois de France. Cet épisode tragique se perpétua pendant plusieurs mois dans d’autres villes.
+                                            Cette même année, Marguerite de Valois, la sœur du roi de France se maria avec Henri de Navarre (chef de la dynastie des huguenots), ce qui permit de réduire les conflits. Cependant, en 1588, les Français catholiques se confrontèrent au roi Henri III, jour que l’on nomma « Journée des barricades ». Le roi fut assassiné et Henri de Navarre s’empara du trône.
+                                            En 1648, l’appauvrissement général de la population amena le peuple à s’insurger contre le roi – ce fut le second « Jour des barricades ». Cet événement marqua le début de la « Fronde », une série de guerres civiles qui eurent lieu dans le pays entre 1648 et 1662. Quinze ans plus tard, le roi Louis XVI décida de transférer la Cour à Versailles.
+                                            Le déclin de la
+                                            Suite à la période de la « Fronde », la pauvreté se répandit aux quatre coins de la ville. Au même moment, le courant de pensée de l’époque correspondait à celui des Lumières, dont les principes fondamentaux se basaient sur la raison, l’égalité et la liberté.
+                                            La pauvreté combinée aux nouvelles idées véhiculées par le courant des Lumières – dont le mouvement a été initié par des philosophes et littéraires tels que Voltaire, Rousseau, Diderot ou Montesquieu – ont grandement favorisé le désir de promouvoir une égalité socio-économique. Ces circonstances menèrent le peuple français à faire la Révolution et entraînèrent le déclin de la monarchie de droit divin.
+                                            Le 14 juillet 1789, les Parisiens attaquèrent la Bastille, symbole de l’absolutisme monarchique, et ce fut le 3 septembre 1791 que la première Constitution fut promulguée dans l’histoire de France. Celle-ci ne conférait plus qu’au roi le pouvoir exécutif et le droit de véto contre les lois approuvées par l’Assemblée Législative.
+                                            Le 10 août 1792, après différents assauts, le peuple prit le Palais des Tuileries, et l’Assemblée Législative suspendit les fonctions constitutionnelles du roi. Le nouveau parlement abolit alors la monarchie et proclama la République. Suite à ces événements, une nouvelle Constitution conférant le pouvoir exécutif au Directoire fut promulguée le 17 août 1795.
+                                            Paris de Napoléo
+                                            La nouvelle Constitution connut une forte opposition de la part des groupes monarchiques et jacobins. Différentes révoltes ont éclaté à Paris, toutes réprimées par l’armée.
+                                            Cependant, le 9 novembre 1799, l’armée n’a pas réussi à réprimer la rébellion du général Napoléon Bonaparte, qui renversa le Directoire pour y établir un Consulat.
+                                            En 15 ans d’Empire napoléonien, Paris connut une époque de grande expansion :la place du Carrousel fut agrandie, deux arcs de triomphe furent érigés ainsi qu’une colonne, la bourse et d’autres marchés et abattoirs.
+                                            Les guerres napoléoniennes emportant avec elles l’Empire de Napoléon, prirent fin le 20 novembre 1815, après la défaite finale, durant la bataille de Waterloo et le Second Traité de Paris en 1815.
+                                            Expansion urbaine
+                                            Après la défaite de Napoléon, la France traversa une période difficile entraînant une instabilité politique forte, jusqu’au coup d’état de 1851 qui propulsa Napoléon III au pouvoir. Ce dernier encouragea fortement le développement urbain durant ses 17 années au gouvernement.
+                                            Avec l’arrivée de Napoléon III et l’élection du Baron Haussmann en tant que préfet de la ville, Paris connut de grands changements en termes de style architectural et de structure urbanistique : le centre fut reconstruit et ses enceintes furent détruites pour laisser place à un plus vaste territoire urbain.
+                                            Le 28 janvier 1871, les troupes prussiennes assiégèrent Paris, et quelques années plus tard, la Troisième République fut proclamée. Avec le nouveau gouvernement au pouvoir, Paris connut une phase de développement économique qui permit d’encourager la construction de la Tour Eiffel en 1889, l'emblème de la ville connu dans le monde entier.
+                                            L’époque contemporaine
+                                            À partir du XXème siècle, de nombreux changements eurent lieu dans la capitale avec la reconstruction de différents quartiers de la ville détruits par les deux guerres mondiales.
+                                            Durant la Première Guerre Mondiale, la ville résista à de nombreux bombardements. En 1940, Paris occupée par les nazis souffrit différents dommages. Toutefois, le 25 août 1944, les Parisiens réussirent à libérer la capitale.
+                                            Pendant la guerre d’Algérie, Paris connut à nouveau beaucoup d’agitations avec de violentes manifestations contre la guerre et de nombreux attentats de l’OAS (Organisation Armée Secrète).
+                                            Paris a également été le théâtre de ce que l’on a nommé “Mai 68”, la série de grèves et de manifestations qui eurent lieu pendant les mois de mai et juin 1968. Ce fut la révolte étudiante majeure de l’histoire de France, et très certainement d’Europe occidentale.
+                                            L’un des derniers événements notables dans la capitale fut la révolte de mars 2006, lorsque les étudiants descendirent dans la rue pour protester contre la réforme du marché du travail.
+                                            En novembre 2015, Paris a été victime d’un tragique événement : celui des attaques terroristes dans la capitale et  sa banlieue, à Saint-Denis, où 137 personnes perdirent la vie et 415 autres furent blessées.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    </div>
                 </div>
             </div>
 
             <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;margin-top: 0;">
-<!--                <p class="description">-->
-<!--                    The history of Paris dates back to approximately 259 BC, with the Parisii, a Celtic tribe settled on the banks of the Seine. In 52 BC, the fishermen village was conquered by the Romans, founding a Gallo-Roman town called Lutetia.-->
-<!--                    The city changed its name to Paris during the fourth century. During this period, the city was threatened by Attila the Hun and his army, and according to the legend, the inhabitants of Paris resisted the attacks thanks to the providential intervention of Saint Geneviève (patron saint of the city).-->
-<!--                    In 508 the first king of the Franks, Clovis I, made Paris the capital of his empire. In 987, the Capetian dynasty came to power until 1328.-->
-<!--                    During the eleventh century, Paris gradually became more prosper thanks to its trade in silver and because it was a strategic route for pilgrims and traders.-->
-<!--                    Riots and uprisings-->
-<!--                    At the beginning of the twelfth century, the first university in France was founded thanks to the uprisings of students and professors. Louis IX appointed the chaplain, Robert de Sorbon, to establish the College, which was later named after him, the Sorbonne.-->
-<!--                    Three insurrections took place during the fourteenth century in Paris: the first, in 1358, when Étienne Marcel led a merchant revolt. The second was a tax riot known as the Maillot uprising in 1382, and the third was the Cabochien revolt in 1413. These riots were part of the Hundred Years’ War.-->
-<!--                    Additionally, the capital of France, which was the most populated city in Europe in 1328, was struck by the Bubonic plague, killing thousands of Parisians. Following the Hundred Years’ War, Paris was devastated and Joan of Arc was unable to keep the British from taking Paris. In 1431, Henry VI of England was crowned King of France and the English did not leave until 1436.-->
-<!--                    The city kept on growing during the following centuries, although monarchs preferred to live in the Loire Valley. In 1528, King Francis I returned the royal residence to Paris and the city became the largest in Western Europe.-->
-<!--                    On 24 August, 1572, the royal council decided to assassinate the leaders of the Protestants (Hugonotes), which lead to Catholic mobs butchering protestants in Paris. Known as St. Bartholomew’s Day Massacre, it spread from Paris to the rest of the country during the following months.-->
-<!--                    Margaret of Valois, sister of King Charles IX, married Henri of Navarre (Head of the Huguenots dynasty) that same year, while Henry III tried to find a solution to the conflicts between the Catholics and Protestants. However, in 1588, the French Catholics forced Henry III to flee on the so-called Day of the Barricades and killed him a year later. He was succeeded by Henry of Navarre, becoming King Henry IV. A decade later, Henry IV decided to convert to Catholicism and was crowned King of France in 1594.-->
-<!--                    In 1648, the second Day of the Barricades took place when the Parisians opposed the King due to the deplorable level of poverty. This was the beginning of a long uprising called the Fronde parlementaire, a serie of civil wars that took place in France between 1648 and 1662. Fifteen years later, King Louis XVI moved the royal residence to Versailles.-->
-<!--                    The decline of the Monarchy-->
-<!--                    As a consequence of the Fronde, poverty spread throughout Paris. During this period, there was an explosion of the Enlightenment philosophical movement, whose principles are based on reason, equality and freedom.-->
-<!--                    Philosophers and authors such as Voltaire, Rousseau, Diderot and Montesquieu fostered the Enlightenment, creating a need for a socio-economic equality that led to the revolution and the decline of the divine right monarchy.-->
-<!--                    On the 14 July 1789, the Parisians stormed the Bastille, symbol of the royal authority and on the 3 September 1791, the first written Constitution was created and approved by King Louis XVI. The King and ministers made up the executive branch and the Monarch was allowed a suspensive veto of the laws approved by the National Assembly.-->
-<!--                    On 10 August, 1792, the Parisians attacked the Tuileries Palace and the National Assembly suspended the King’s constitutional rights. The new parliament abolished the monarchy and proclaimed the Republic. As a consequence, on 17 August 1795, a new constitution was approved giving the executive power to a Directory.-->
-<!--                    Paris during Napoleo-->
-<!--                    The new Constitution was not accepted by monarchic groups and Jacobins. Several uprisings took place in Paris, but were all repressed by the army.-->
-<!--                    Nevertheless, on 9 November 1799, the army was unable to crush the coup d’état led by Napoleon Bonaparte, which overthrew the Directory and replaced it by the Consulate, Napoleon being First Consul.-->
-<!--                    During the following fifteen years, Napoleon enlarged the Place du Carrousel, built two Arcs de Triomphe, a column, several markets, the Paris bourse and a few slaughter houses.-->
-<!--                    The Napoleonic Wars – and with it the Empire of Napoleon – ended on 20 November 1815, after Napoleon had been defeated at the Battle of Waterloo, and the second Treaty of Paris of 1815 was signed.-->
-<!--                    Urban developmen-->
-<!--                    Once Napoleon had been defeated, France experienced great political uncertainty until Napoleon’s nephew organized a coup d’état in 1851 and became Emperor Napoleon III. During the following seventeen years, Napoleon III promoted the city’s urban development.-->
-<!--                    During this period and with Baron Haussmann as the prefect of Paris, the city changed its urban structure, rebuilding the center, knocking down its fortification and expanding the metropolitan territory.-->
-<!--                    On the 28 January 1871, Paris was conquered by the Prussian troops and a few years later (at the end of 1800), the Third Republic was proclaimed. With the new government, an era of economic growth began for the city, promoting in 1889 the construction of the Eiffel Tower, worldwide symbol of Paris.-->
-<!--                    Contemporary Paris-->
-<!--                    From the twentieth century on, Paris suffered important changes with the reconstruction of different neighborhoods, many damaged during World War I and World War II.-->
-<!--                    During World War I, the city resisted the German offensives. However, in 1940, Paris was occupied by the Nazis, although the Parisians resisted and freed the capital on 25 August 1944.-->
-<!--                    During the war against Algeria, several violent manifestations took place in Paris against the war, with numerous attacks by the OAS (Organisation of the Secret Army).-->
-<!--                    During the months of May and June 1968, a series of protests took place in the capital of France, known as “May 68”. This was the largest student protest in the history of France and, possibly, the rest of Western Europe.-->
-<!--                    One of the last riots to take place in Paris was in March 2006, when students poured out onto the streets and protested against the labour market reform.-->
-<!--                    In November 2015, Paris witnessed a tragic event, several terrorist attacks hit the city and the suburbs of Saint-Denis, killing 137 people and injuring 415.-->
-<!--                </p>-->
                 <div class="row g-4 justify-content-center" style="margin-top: 80px;">
                     <div class="col-md-6 col-lg-6 col-xl-6 wow fade4434InUp" data-wow-delay="0.1s">
                         <a href="Palais.html" class="text-center">
@@ -251,143 +264,7 @@
                             </div>
                         </a>
                     </div>
-<!--                    <div class="col-md-6 col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay="0.3s">-->
-<!--                        <a href="Palais.html"  class="text-center">-->
-<!--                            <div class="row-cols-1 feature-item p-4">-->
-<!--                                <div class="col-12">-->
-<!--                                    <div class="feature-icon mb-4">-->
-<!--                                        <div class="p-3 d-inline-flex bg-white rounded">-->
-<!--                                            <i class="fas fa-church fa-4x text-primary"></i>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="feature-content d-flex flex-column">-->
-<!--                                        <h5 class="mb-4">Cathedrals de Paris</h5>-->
-<!--                                        <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
-                    <div class="col-md-6 col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="Palais.html"  class="text-center">
-                            <div class="row-cols-1 feature-item p-4">
-                                <div class="col-12">
-                                    <div class="feature-icon mb-4">
-                                        <div class="p-3 d-inline-flex bg-white rounded">
-                                            <i class="fab fa-fort-awesome fa-4x text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="feature-content d-flex flex-column">
-                                        <h5 class="mb-4">Castles de Paris</h5>
-                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a href="Palais.html"  class="text-center">
-                            <div class="row-cols-1 feature-item p-4">
-                                <div class="col-12">
-                                    <div class="feature-icon mb-4">
-                                        <div class="p-3 d-inline-flex bg-white rounded">
-                                            <i class="fas fa-mosque fa-4x text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="feature-content d-flex flex-column">
-                                        <h5 class="mb-4">Museums de Paris</h5>
-                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-<!--                    <div class="col-md-6 col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay="0.7s">-->
-<!--                        <a href="Palais.html"  class="text-center">-->
-<!--                            <div class="row-cols-1 feature-item p-4">-->
-<!--                                <div class="col-12">-->
-<!--                                    <div class="feature-icon mb-4">-->
-<!--                                        <div class="p-3 d-inline-flex bg-white rounded">-->
-<!--                                            <i class="fas fa-mosque fa-4x text-primary"></i>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="feature-content d-flex flex-column">-->
-<!--                                        <h5 class="mb-4">Monuments de Paris</h5>-->
-<!--                                        <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
-                    <!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">-->
-                    <!--                        <a href="">-->
-                    <!--                        <div class="row-cols-1 feature-item p-4">-->
-                    <!--                            <div class="col-12">-->
-                    <!--                                <div class="feature-icon mb-4">-->
-                    <!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-                    <!--                                        <i class="fas fa-spa fa-4x text-primary"></i>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                                <div class="feature-content d-flex flex-column">-->
-                    <!--                                    <h5 class="mb-4">Comfortable Center</h5>-->
-                    <!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        </a>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">-->
-                    <!--                        <a href="">-->
-                    <!--                        <div class="row-cols-1 feature-item p-4">-->
-                    <!--                            <div class="col-12">-->
-                    <!--                                <div class="feature-icon mb-4">-->
-                    <!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-                    <!--                                        <i class="fas fa-heart fa-4x text-primary"></i>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                                <div class="feature-content d-flex flex-column">-->
-                    <!--                                    <h5 class="mb-4">Experienced Stuff</h5>-->
-                    <!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        </a>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">-->
-                    <!--                        <a href="">-->
-                    <!--                        <div class="row-cols-1 feature-item p-4">-->
-                    <!--                            <div class="col-12">-->
-                    <!--                                <div class="feature-icon mb-4">-->
-                    <!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-                    <!--                                        <i class="fab fa-pied-piper fa-4x text-primary"></i>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                                <div class="feature-content d-flex flex-column">-->
-                    <!--                                    <h5 class="mb-4">Therapy Goals</h5>-->
-                    <!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        </a>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">-->
-                    <!--                        <a href="">-->
-                    <!--                        <div class="row-cols-1 feature-item p-4">-->
-                    <!--                            <div class="col-12">-->
-                    <!--                                <div class="feature-icon mb-4">-->
-                    <!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-                    <!--                                        <i class="fas fa-user-md fa-4x text-primary"></i>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                                <div class="feature-content d-flex flex-column">-->
-                    <!--                                    <h5 class="mb-4">Licensed Therapist</h5>-->
-                    <!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        </a>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">-->
-                    <!--                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>-->
-                    <!--                    </div>-->
+
                 </div>
             </div>
         </div>
@@ -475,77 +352,6 @@
                         </div>
                         </a>
                     </div>
-<!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">-->
-<!--                        <a href="">-->
-<!--                        <div class="row-cols-1 feature-item p-4">-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="feature-icon mb-4">-->
-<!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-<!--                                        <i class="fas fa-spa fa-4x text-primary"></i>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="feature-content d-flex flex-column">-->
-<!--                                    <h5 class="mb-4">Comfortable Center</h5>-->
-<!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">-->
-<!--                        <a href="">-->
-<!--                        <div class="row-cols-1 feature-item p-4">-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="feature-icon mb-4">-->
-<!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-<!--                                        <i class="fas fa-heart fa-4x text-primary"></i>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="feature-content d-flex flex-column">-->
-<!--                                    <h5 class="mb-4">Experienced Stuff</h5>-->
-<!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">-->
-<!--                        <a href="">-->
-<!--                        <div class="row-cols-1 feature-item p-4">-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="feature-icon mb-4">-->
-<!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-<!--                                        <i class="fab fa-pied-piper fa-4x text-primary"></i>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="feature-content d-flex flex-column">-->
-<!--                                    <h5 class="mb-4">Therapy Goals</h5>-->
-<!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">-->
-<!--                        <a href="">-->
-<!--                        <div class="row-cols-1 feature-item p-4">-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="feature-icon mb-4">-->
-<!--                                    <div class="p-3 d-inline-flex bg-white rounded">-->
-<!--                                        <i class="fas fa-user-md fa-4x text-primary"></i>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="feature-content d-flex flex-column">-->
-<!--                                    <h5 class="mb-4">Licensed Therapist</h5>-->
-<!--                                    <p class="mb-0">Larn sea about these blocks and unique features.</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">-->
-<!--                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -640,7 +446,18 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '#load-more-text-btn', function () {
+            $('#textModal').modal('show'); // Открываем модальное окно
+        });
+
+        // Очистка (опционально) при закрытии модального окна
+        $('#textModal').on('hide.bs.modal', function () {
+            $('#textModal').hide(); // Прячем iframe, если требуется
+        });
+    });
+</script>
     </body>
 
 </html>
