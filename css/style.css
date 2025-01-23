@@ -1286,3 +1286,14 @@ height:230px;
 .text-center{
 text-align:center;
 }
+
+.popup-text{
+
+position: absolute;
+    z-index: 9;
+    font-size: 59px;
+    font-weight: 700;
+    bottom: 0px;
+    right: 25px;
+    color: #7f7f7f87;
+}
